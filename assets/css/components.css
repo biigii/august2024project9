@@ -1,9 +1,28 @@
-body {
-    background-color: var(--secondary);
+@media (max-width: 1200px) {
+    /* i.e. on small screens */
+    body {
+        background-color: #f11;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
 }
+
+@media (min-width: 1200px) {
+    body {
+        background-color: #000;
+    }
+
+    h1 {
+        font-size: 150px;
+    }
+}
+
 
 header {
     height: 100px;
+    margin-bottom: 100px;
 }
 
 nav {
@@ -63,7 +82,23 @@ section {
 .position-absolute {
     /* nw that parent is relative it contains the absolute child */
     position: relative;
-}
+} @media (min-width: 1600px) {
+    .column {
+      width: 25%;
+    }
+  }
+  
+  @media (min-width: 800px) and (max-width: 1600px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .column {
+      width: 100%;
+    }
+  }
 
 .box-absolute {
     background-color: #bd50d6;
@@ -97,4 +132,25 @@ section {
     position: sticky;
     /* it sticks at top 150px */
     top: 150px
+}
+
+.column img {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.column p {
+    margin-bottom: 100px;
+}
+
+.column button {
+    display: block;
+    width: 140px;
+    height: 40px;
+    margin-left: auto;
+    font-size: 20px;
+    text-transform: capitalize;
+    background-color: #f11;
+    border: 2px solid;
+    color: #fff
 }
