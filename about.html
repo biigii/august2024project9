@@ -9,15 +9,107 @@
   <body>
     <header>
       <nav>
-          <a href="./index.html">home</a>
-          <a href="./about.html">about</a>
-          <a href="./contact.html">contact</a>
-          <a href="./gallery.html">gallery</a>
+        <a href="./index.html">home</a>
+        <a href="./about.html">about</a>
+        <a href="./contact.html">contact</a>
+        <a href="./gallery.html">gallery</a>
       </nav>
-  </header>
+    </header>
     <h1>about</h1>
     <main class="container">
-    
+
+     <!-- BEM which stands for Block Element and Modifier -->
+
+     <style>
+      .news__btn {
+        width: 150px;
+        height: 50px;
+        border: 3px solid;
+        border-radius: 10px;
+      }
+
+      .news__btn--danger {
+        background-color: #f33;
+      }
+
+      .news__btn--warning {
+        background-color: #f99;
+      }
+
+      .news__btn--info {
+        background-color: #00f;
+      }
+
+
+
+     </style>
+
+      <article class="news">
+        <h2 class="news__heading">Lorem, ipsum dolor.</h2>
+        <img src="https://picsum.photos/id/1041/300/200" class="news__photo">
+        <p class="news__content">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam
+          pariatur, dignissimos quaerat tenetur iste laboriosam rem iure animi
+          maiores! Voluptatem aperiam sapiente totam rem repudiandae doloribus
+          praesentium provident porro voluptate?
+        </p>
+        <button class="news__btn news__btn--danger">Lorem, ipsum dolor.</button>
+        <button class="news__btn news__btn--warning">Lorem, ipsum dolor.</button>
+        <button class="news__btn news__btn--info">Lorem, ipsum dolor.</button>
+      </article>
+
+
+      <article class="blog">
+        <h3 class="blog__heading">Lorem, ipsum dolor.</h3>
+        <img src="https://picsum.photos/id/1045/300/200" alt="" class="blog__photo">
+        <p class="blog__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, minus!</p>
+        <button class="blog__button">Lorem, ipsum.</button>
+        <div class="blog__block">
+          <p class="blog__block__text">Lorem ipsum dolor sit.</p>
+          <p class="blog__block__text blog__block__text--important">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, iste?</p>
+        </div>
+      </article>
+
+
+      <style>
+        .content {
+          border: 2px solid #fff;
+          width: 400px;
+        }
+
+        .content h2,
+        .new h2 {
+          text-align: center;
+        }
+
+        .content .some-text {
+          color: #ff1;
+        }
+      </style>
+
+      <article class="content">
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam
+          pariatur, dignissimos quaerat tenetur iste laboriosam rem iure animi
+          maiores! Voluptatem aperiam sapiente totam rem repudiandae doloribus
+          praesentium provident porro voluptate?
+        </p>
+        <button>Lorem, ipsum dolor.</button>
+      </article>
+
+      <article class="news">
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam
+          pariatur, dignissimos quaerat tenetur iste laboriosam rem iure animi
+          maiores! Voluptatem aperiam sapiente totam rem repudiandae doloribus
+          praesentium provident porro voluptate?
+        </p>
+        <button>Lorem, ipsum dolor.</button>
+      </article>
+
+
     </main>
   </body>
 </html>
