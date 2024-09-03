@@ -12,11 +12,6 @@
   clear: both;
 }
 
-p {
-  color: #fff;
-  text-align: justify;
-}
-
 .col {
   float: left;
   padding: 0 10px;
