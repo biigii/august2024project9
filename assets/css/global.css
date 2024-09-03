@@ -1,0 +1,12 @@
+/* global selector */
+* {
+    /* modify the box model so padding and border become included inside elements */
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+

@@ -1,0 +1,6 @@
+/* we use :root which is alias for html */
+:root {
+    --primary: #ffaa00;
+    --secondary: #557700;
+    --tertiary: #cfe556;
+}
